@@ -70,7 +70,7 @@ export function Splash() {
     <div style={{
       fontFamily: "-apple-system, 'Helvetica Neue', sans-serif",
       background: '#0e0e0e',
-      minHeight: '100vh',
+      
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',

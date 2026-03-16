@@ -18,41 +18,41 @@ const AURA: Record<string, AuraPalette> = {
   good:       { spokes: ['#85B7EB','#378ADD','#B5D4F4','#185FA5','#85B7EB','#378ADD','#B5D4F4','#185FA5','#85B7EB','#378ADD','#B5D4F4','#185FA5'], center: '#E6F1FB', dot: '#378ADD' },
 };
 
-const VIBES: Record<string, Record<string, { word: string; tag: string; reframe: string; action: string }>> = {
+const VIBES: Record<string, Record<string, { word: string; tag: string; reframe: string }>> = {
   drained: {
-    review:   { word: 'Still water',   tag: "You don't have to perform. You just have to show up.",         reframe: "You're tired, and that's real. But tired doesn't mean wrong. You know your work better than anyone in that room. You don't need to be sharp — you just need to be honest.",                                                                                        action: "Try the 5-4-3-2-1 grounding technique: name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste. It brings you back into your body when your mind is running low." },
-    conflict: { word: 'The gap',       tag: "Slow is strong when the room is loud.",                        reframe: "When you're drained, conflict feels heavier than it is. You don't have to win today — you just have to say the one true thing you came to say. That's enough.",                                                                                                   action: "Before you walk in, take one long slow exhale through your mouth — longer than the inhale. Do it three times. It tells your nervous system the threat isn't real." },
-    pitch:    { word: 'Quiet gravity', tag: "The quietest person in the room is often the most confident.", reframe: "Low energy can actually read as calm authority if you let it. You don't need to perform excitement. Speak slowly, pause when you need to, and trust that the work carries itself.",                                                                               action: "Splash cold water on your wrists or the back of your neck right now. It resets your nervous system fast. Then take two slow breaths before you open the door." },
-    collab:   { word: 'Anchor',        tag: "Being present is the whole job today.",                        reframe: "You're not going to be the most energetic person in the room today, and that's fine. Your job is to listen carefully and say one useful thing. That's a real contribution.",                                                                                    action: "Do the 5-4-3-2-1 grounding technique: 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. It takes 60 seconds and actually works." },
-    decision: { word: 'Signal',        tag: "Tired minds cut straight to what matters.",                    reframe: "Here's the thing about being drained — you don't have the energy to overthink. Your gut read on this might actually be your clearest. Trust it. Say it simply.",                                                                                                 action: "Write your position in one sentence before you walk in. One sentence. If you can't do it, you're not ready — and it's okay to say that in the meeting." },
+    review:   { word: 'Still water',   tag: "You don't have to perform. You just have to show up.",         reframe: "You're tired, and that's real. But tired doesn't mean wrong. You know your work better than anyone in that room. You don't need to be sharp — you just need to be honest." },
+    conflict: { word: 'The gap',       tag: "Slow is strong when the room is loud.",                        reframe: "When you're drained, conflict feels heavier than it is. You don't have to win today — you just have to say the one true thing you came to say. That's enough." },
+    pitch:    { word: 'Quiet gravity', tag: "The quietest person in the room is often the most confident.", reframe: "Low energy can actually read as calm authority if you let it. You don't need to perform excitement. Speak slowly, pause when you need to, and trust that the work carries itself." },
+    collab:   { word: 'Anchor',        tag: "Being present is the whole job today.",                        reframe: "You're not going to be the most energetic person in the room today, and that's fine. Your job is to listen carefully and say one useful thing. That's a real contribution." },
+    decision: { word: 'Signal',        tag: "Tired minds cut straight to what matters.",                    reframe: "Here's the thing about being drained — you don't have the energy to overthink. Your gut read on this might actually be your clearest. Trust it. Say it simply." },
   },
   anxious: {
-    review:   { word: 'Grounded',    tag: "You've already done the hard part. This is just the conversation.", reframe: "Yeah, you don't know exactly how this is going to go. But the work you've done already made the argument for you. You're not going in empty-handed — you're going in to clarify what's already true.",                                                   action: "Try box breathing: breathe in for 4 counts, hold for 4, out for 4, hold for 4. Do it twice before you walk in. It genuinely slows your heart rate." },
-    conflict: { word: 'Curious',     tag: "The person who asks the first question controls the room.",        reframe: "I hope this goes well too — and here's what actually helps: go in wanting to understand their side before you make yours. Not because you're weak, but because it's disarming. And it usually works.",                                                       action: "One slow exhale through your mouth, longer than your inhale. Do it three times. Then write one genuine question you want to ask them. Lead with that." },
-    pitch:    { word: 'Ready',       tag: "You've thought about this more than anyone else in that room.",    reframe: "Yeah, you don't know how they'll respond. Nobody ever does. But you've lived with this idea longer than they have. That matters. The nerves just mean you care — let them.",                                                                                 action: "Box breathing: in for 4, hold for 4, out for 4, hold for 4. Twice. Then say your opening line out loud once before you walk in. Not in your head — out loud." },
-    collab:   { word: 'Present',     tag: "Nobody needs you to perform. They just need you to think.",        reframe: "The anxiety you're feeling is your brain trying to protect you from a threat that isn't actually there. This is a collaboration, not an evaluation. You were invited because your thinking is wanted.",                                                       action: "Try 5-4-3-2-1 grounding: 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. It interrupts the anxiety loop." },
-    decision: { word: 'Clear-eyed',  tag: "Honest uncertainty is more useful than false confidence.",         reframe: "You're worried you don't have all the answers. Good — nobody does. The most useful thing you can bring into a decision meeting is what you genuinely know and what you genuinely don't. That's not weakness, that's clarity.",                                action: "Box breathing before you walk in: 4 counts in, 4 hold, 4 out, 4 hold. Twice. Then write your position AND your honest uncertainty. Bring both." },
+    review:   { word: 'Grounded',    tag: "You've already done the hard part. This is just the conversation.", reframe: "Yeah, you don't know exactly how this is going to go. But the work you've done already made the argument for you. You're not going in empty-handed — you're going in to clarify what's already true." },
+    conflict: { word: 'Curious',     tag: "The person who asks the first question controls the room.",        reframe: "I hope this goes well too — and here's what actually helps: go in wanting to understand their side before you make yours. Not because you're weak, but because it's disarming. And it usually works." },
+    pitch:    { word: 'Ready',       tag: "You've thought about this more than anyone else in that room.",    reframe: "Yeah, you don't know how they'll respond. Nobody ever does. But you've lived with this idea longer than they have. That matters. The nerves just mean you care — let them." },
+    collab:   { word: 'Present',     tag: "Nobody needs you to perform. They just need you to think.",        reframe: "The anxiety you're feeling is your brain trying to protect you from a threat that isn't actually there. This is a collaboration, not an evaluation. You were invited because your thinking is wanted." },
+    decision: { word: 'Clear-eyed',  tag: "Honest uncertainty is more useful than false confidence.",         reframe: "You're worried you don't have all the answers. Good — nobody does. The most useful thing you can bring into a decision meeting is what you genuinely know and what you genuinely don't. That's not weakness, that's clarity." },
   },
   frustrated: {
-    review:   { word: 'Underneath',  tag: "The feeling is valid. What you do with it is the choice.",        reframe: "Something feels off or unfair, and you're carrying that in. That's real. But the most powerful thing you can do right now is name it calmly instead of leaking it. People hear you more clearly when you're not hot.",                                       action: "One long exhale through your mouth before you open the door. Let the frustration out with the breath. Then decide: what's the one thing you need them to actually hear today?" },
-    conflict: { word: 'Precise',     tag: "The cleaner the sentence, the harder it is to ignore.",           reframe: "You're frustrated and you have every right to be. But frustration that stays frustration just creates noise. Find the sentence underneath it — the thing that's actually true — and say that instead.",                                                        action: "Write down what you're angry about. Now write the one true thing underneath the anger. That second sentence is what you bring into the room. Leave the first one outside." },
-    pitch:    { word: 'Edge',        tag: "Belief is more convincing than polish.",                          reframe: "That frustration? It means you actually believe in this. Use it. The best pitches aren't the smoothest ones — they're the ones where it's clear the person giving them genuinely means it.",                                                                   action: "One slow exhale through your mouth. Long as you can. Then reread your strongest point and remember why it matters to you personally. That's the energy you want to walk in with." },
-    collab:   { word: 'Measured',    tag: "You don't have to give everything today.",                        reframe: "You're carrying something and it's heavy. Give yourself permission to be a quieter participant today. One good, well-timed contribution is worth more than ten reactive ones. You don't owe the room your full energy right now.",                              action: "Before you walk in, do one long exhale through your mouth. Let it go with the breath as much as you can. Then decide the one thing, if anything, you'll contribute. That's your whole job today." },
-    decision: { word: 'Deliberate',  tag: "Say it once, clearly, and let the room do the rest.",             reframe: "You have a strong opinion and you're probably right. But frustration makes us push harder than the moment needs. State your position clearly, say it once with confidence, and then let the room respond. Repetition weakens the argument.",                  action: "Write your recommendation in one sentence. Read it out loud. Does it sound like you mean it without being angry? If yes — that's what you say in the room. Once." },
+    review:   { word: 'Underneath',  tag: "The feeling is valid. What you do with it is the choice.",        reframe: "Something feels off or unfair, and you're carrying that in. That's real. But the most powerful thing you can do right now is name it calmly instead of leaking it. People hear you more clearly when you're not hot." },
+    conflict: { word: 'Precise',     tag: "The cleaner the sentence, the harder it is to ignore.",           reframe: "You're frustrated and you have every right to be. But frustration that stays frustration just creates noise. Find the sentence underneath it — the thing that's actually true — and say that instead." },
+    pitch:    { word: 'Edge',        tag: "Belief is more convincing than polish.",                          reframe: "That frustration? It means you actually believe in this. Use it. The best pitches aren't the smoothest ones — they're the ones where it's clear the person giving them genuinely means it." },
+    collab:   { word: 'Measured',    tag: "You don't have to give everything today.",                        reframe: "You're carrying something and it's heavy. Give yourself permission to be a quieter participant today. One good, well-timed contribution is worth more than ten reactive ones." },
+    decision: { word: 'Deliberate',  tag: "Say it once, clearly, and let the room do the rest.",             reframe: "You have a strong opinion and you're probably right. But frustration makes us push harder than the moment needs. State your position clearly, say it once with confidence, and then let the room respond." },
   },
   neutral: {
-    review:   { word: 'Open',        tag: "No defenses up means you can actually hear something useful.",    reframe: "You're in the best possible state for a review — no anxiety, no agenda. Treat this like a calibration conversation, not a verdict. You're here to get data, not to be judged.",                                                                               action: "Go in with one specific question you want answered. Not a general one — a real one. Make sure you leave with the answer." },
-    conflict: { word: 'Steady',      tag: "The calmest person in the room usually wins.",                   reframe: "Your neutrality is actually a superpower here. You can afford to listen fully before you respond. You're not triggered, which means you can actually hear what they're really saying underneath what they're saying.",                                        action: "One slow exhale before you walk in. Then commit to listening for what they actually want — not just what they're saying. Those are often different things." },
-    pitch:    { word: 'Focused fire',tag: "Find the reason you care before you walk in.",                   reframe: "You're steady, which is good — but pitches need a spark. Take 30 seconds to remember why this idea actually matters to you. Not why it's good on paper. Why you personally give a damn. That's what lands.",                                                  action: "Say out loud — not in your head, out loud — why you believe in this. Once. That's the energy you want to carry in with you." },
-    collab:   { word: 'Receptive',   tag: "The best idea in the room might not be yours today. Stay open.", reframe: "Neutral is actually the ideal collaboration state. You're not trying to win, not trying to prove anything. You're here to build something. Stay loose — the best contribution might come from somewhere you didn't expect.",                                action: "Decide one thing you want to say going in. Then stay genuinely open to everything else. That's the whole plan." },
-    decision: { word: 'Calibrated',  tag: "No ego in the room means cleaner decisions.",                    reframe: "You can weigh this without attachment, which is rare. Most people in decision meetings are defending something. You're not — which means your read is probably the clearest one in the room.",                                                                 action: "Know your answer before the meeting starts. Write it down. When the room starts spinning, come back to what you wrote." },
+    review:   { word: 'Open',        tag: "No defenses up means you can actually hear something useful.",    reframe: "You're in the best possible state for a review — no anxiety, no agenda. Treat this like a calibration conversation, not a verdict. You're here to get data, not to be judged." },
+    conflict: { word: 'Steady',      tag: "The calmest person in the room usually wins.",                   reframe: "Your neutrality is actually a superpower here. You can afford to listen fully before you respond. You're not triggered, which means you can actually hear what they're really saying underneath what they're saying." },
+    pitch:    { word: 'Focused fire',tag: "Find the reason you care before you walk in.",                   reframe: "You're steady, which is good — but pitches need a spark. Take 30 seconds to remember why this idea actually matters to you. Not why it's good on paper. Why you personally give a damn. That's what lands." },
+    collab:   { word: 'Receptive',   tag: "The best idea in the room might not be yours today. Stay open.", reframe: "Neutral is actually the ideal collaboration state. You're not trying to win, not trying to prove anything. You're here to build something. Stay loose — the best contribution might come from somewhere you didn't expect." },
+    decision: { word: 'Calibrated',  tag: "No ego in the room means cleaner decisions.",                    reframe: "You can weigh this without attachment, which is rare. Most people in decision meetings are defending something. You're not — which means your read is probably the clearest one in the room." },
   },
   good: {
-    review:   { word: 'Grounded',    tag: "Confidence is most useful when it's also curious.",              reframe: "You're in a great headspace — just don't let it close you off. The best feedback often comes when you're not defending. Stay open even when you feel good. Especially when you feel good.",                                                                   action: "Go in with one question you wouldn't normally ask. Good energy creates space for honest answers. Use it." },
-    conflict: { word: 'Generous',    tag: "You're strong enough to extend first.",                          reframe: "You're in the right state to actually hear the other person — not just wait for your turn. Lead by naming something true about their perspective before you make your point. It changes the whole dynamic.",                                                  action: "One slow exhale, then decide: what's one thing about their position that's actually valid? Start there. Then make yours." },
-    pitch:    { word: 'Lion mode',   tag: "This is yours. You've done the work.",                           reframe: "You're ready. The prep is done, you believe in the idea, and you feel like yourself. Your only job now is to show up as you and trust that the preparation is already in the room with you.",                                                                action: "One deep breath in through your nose, long exhale through your mouth. Then go. You're ready." },
-    collab:   { word: 'Lit',         tag: "Good energy is the most contagious thing in a room.",            reframe: "Your clarity today is a gift — don't hoard it. The best collaborations happen when someone makes it easier for everyone else to be honest and bold. That's your role today.",                                                                               action: "Find one moment to genuinely affirm someone else's idea in the meeting. Simple, sincere, specific. Watch what it does to the room." },
-    decision: { word: 'Sharp',       tag: "Trust the read. You're seeing clearly today.",                   reframe: "Good energy plus clear thinking is your best state for a big decision. Don't second-guess your instincts today — they're sharp. Say your piece with confidence and let the room respond.",                                                                  action: "Power pose for 30 seconds before you walk in — hands on hips, chin up, feet apart. It sounds silly. It works. Then go say the thing you actually think." },
+    review:   { word: 'Grounded',    tag: "Confidence is most useful when it's also curious.",              reframe: "You're in a great headspace — just don't let it close you off. The best feedback often comes when you're not defending. Stay open even when you feel good. Especially when you feel good." },
+    conflict: { word: 'Generous',    tag: "You're strong enough to extend first.",                          reframe: "You're in the right state to actually hear the other person — not just wait for your turn. Lead by naming something true about their perspective before you make your point. It changes the whole dynamic." },
+    pitch:    { word: 'Lion mode',   tag: "This is yours. You've done the work.",                           reframe: "You're ready. The prep is done, you believe in the idea, and you feel like yourself. Your only job now is to show up as you and trust that the preparation is already in the room with you." },
+    collab:   { word: 'Lit',         tag: "Good energy is the most contagious thing in a room.",            reframe: "Your clarity today is a gift — don't hoard it. The best collaborations happen when someone makes it easier for everyone else to be honest and bold. That's your role today." },
+    decision: { word: 'Sharp',       tag: "Trust the read. You're seeing clearly today.",                   reframe: "Good energy plus clear thinking is your best state for a big decision. Don't second-guess your instincts today — they're sharp. Say your piece with confidence and let the room respond." },
   },
 };
 
@@ -62,6 +62,197 @@ const GOAL_ACTIONS: Record<string, string> = {
   honest:  "The thing you've been holding back — you already know what it is. Prepare to say it clearly, without apologizing for having the thought.",
   through: 'Give yourself full permission to just finish this one. Not every meeting needs to be a win. Done is enough today.',
 };
+
+type WellnessTechnique = {
+  name: string;
+  type: 'breath' | 'visual';
+  color: string;
+  bgColor: string;
+  numColor: string;
+  phases?: { label: string; dur: number; toR: number }[];
+  steps: string[];
+  svg?: string;
+};
+
+const NEUTRAL_WELLNESS: WellnessTechnique = {
+  name: 'Quick reset walk',
+  type: 'visual',
+  color: '#1D9E75',
+  bgColor: '#E1F5EE',
+  numColor: '#0F6E56',
+  steps: [
+    'Step away from your desk or waiting area',
+    'Walk for 2 minutes — outside if possible, hallway if not',
+    'No phone. Just walk and breathe naturally.',
+    'Come back and walk in. Movement clears the head.',
+  ],
+  svg: `<svg width="80" height="100" viewBox="0 0 80 100"><circle cx="40" cy="14" r="10" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/><line x1="40" y1="24" x2="40" y2="60" stroke="#1D9E75" stroke-width="2" stroke-linecap="round"/><line x1="40" y1="38" x2="26" y2="52" stroke="#1D9E75" stroke-width="2" stroke-linecap="round"/><line x1="40" y1="38" x2="54" y2="52" stroke="#1D9E75" stroke-width="2" stroke-linecap="round"/><line x1="40" y1="60" x2="28" y2="88" stroke="#1D9E75" stroke-width="2" stroke-linecap="round"/><line x1="40" y1="60" x2="52" y2="88" stroke="#1D9E75" stroke-width="2" stroke-linecap="round"/></svg>`,
+};
+
+const WELLNESS: Record<string, WellnessTechnique> = {
+  anxious: {
+    name: 'Box breathing',
+    type: 'breath',
+    color: '#7F77DD',
+    bgColor: '#EEEDFE',
+    numColor: '#534AB7',
+    phases: [
+      { label: 'Breathe in...', dur: 4000, toR: 38 },
+      { label: 'Hold...',       dur: 4000, toR: 38 },
+      { label: 'Breathe out...', dur: 4000, toR: 16 },
+      { label: 'Hold...',       dur: 4000, toR: 16 },
+    ],
+    steps: [
+      'Breathe in slowly through your nose for 4 counts',
+      'Hold your breath for 4 counts',
+      'Exhale slowly through your mouth for 4 counts',
+      'Hold empty for 4 counts',
+      'Repeat 2 times. Your heart rate will slow.',
+    ],
+  },
+  frustrated: {
+    name: 'Long exhale',
+    type: 'breath',
+    color: '#D85A30',
+    bgColor: '#FAECE7',
+    numColor: '#993C1D',
+    phases: [
+      { label: 'Breathe in...', dur: 4000, toR: 38 },
+      { label: 'Breathe out slowly...', dur: 8000, toR: 16 },
+    ],
+    steps: [
+      'Breathe in through your nose for 4 counts',
+      'Exhale slowly through your mouth for 8 counts — twice as long',
+      'Let the frustration leave with the breath',
+      'Repeat 3 times. The long exhale activates your calm response.',
+    ],
+  },
+  drained: {
+    name: '5-4-3-2-1 grounding',
+    type: 'visual',
+    color: '#888780',
+    bgColor: '#F1EFE8',
+    numColor: '#5F5E5A',
+    steps: [
+      'Name 5 things you can see right now',
+      'Name 4 things you can physically touch',
+      'Name 3 things you can hear',
+      'Name 2 things you can smell',
+      'Name 1 thing you can taste',
+    ],
+    svg: `<svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="36" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/><text x="40" y="24" text-anchor="middle" font-size="10" fill="#5F5E5A" font-family="-apple-system,sans-serif">5 · see</text><text x="40" y="36" text-anchor="middle" font-size="10" fill="#5F5E5A" font-family="-apple-system,sans-serif">4 · touch</text><text x="40" y="48" text-anchor="middle" font-size="10" fill="#5F5E5A" font-family="-apple-system,sans-serif">3 · hear</text><text x="40" y="60" text-anchor="middle" font-size="10" fill="#5F5E5A" font-family="-apple-system,sans-serif">2 · smell</text><text x="40" y="72" text-anchor="middle" font-size="10" fill="#5F5E5A" font-family="-apple-system,sans-serif">1 · taste</text></svg>`,
+  },
+  neutral: {
+    ...NEUTRAL_WELLNESS,
+  },
+  good: {
+    name: 'Power pose',
+    type: 'visual',
+    color: '#378ADD',
+    bgColor: '#E6F1FB',
+    numColor: '#185FA5',
+    steps: [
+      'Stand up straight, feet shoulder-width apart',
+      'Hands on hips, chin slightly up, shoulders back',
+      'Hold for 30 seconds. Breathe normally.',
+      "It sounds silly. Research says it works. Now go.",
+    ],
+    svg: `<svg width="80" height="100" viewBox="0 0 80 100"><circle cx="40" cy="14" r="10" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/><line x1="40" y1="24" x2="40" y2="62" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="36" x2="14" y2="50" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="36" x2="66" y2="50" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="62" x2="28" y2="92" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/><line x1="40" y1="62" x2="52" y2="92" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/></svg>`,
+  },
+};
+
+function BreathingCanvas({ technique }: { technique: WellnessTechnique }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animRef = useRef<number>(0);
+  const phaseRef = useRef(0);
+  const phaseStartRef = useRef(0);
+  const fromRRef = useRef(16);
+  const [phaseLabel, setPhaseLabel] = useState('Breathe in...');
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas || !technique.phases) return;
+    const ctx = canvas.getContext('2d')!;
+    const cx = 45, cy = 45, minR = 16, maxR = 38;
+    phaseRef.current = 0;
+    phaseStartRef.current = performance.now();
+    fromRRef.current = minR;
+
+    function ease(t: number) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
+
+    function draw(r: number) {
+      ctx.clearRect(0, 0, 90, 90);
+      ctx.beginPath(); ctx.arc(cx, cy, maxR + 4, 0, Math.PI*2);
+      ctx.strokeStyle = technique.color + '22'; ctx.lineWidth = 1; ctx.stroke();
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI*2);
+      ctx.fillStyle = technique.color + '18'; ctx.fill();
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI*2);
+      ctx.strokeStyle = technique.color; ctx.lineWidth = 1.5; ctx.stroke();
+    }
+
+    function tick(now: number) {
+      const phases = technique.phases!;
+      const phase = phases[phaseRef.current];
+      if (!phase) return;
+      const elapsed = now - phaseStartRef.current;
+      const progress = Math.min(1, elapsed / phase.dur);
+      const r = fromRRef.current + (phase.toR - fromRRef.current) * ease(progress);
+      draw(r);
+      setPhaseLabel(phase.label);
+      if (progress >= 1) {
+        fromRRef.current = phase.toR;
+        phaseRef.current = (phaseRef.current + 1) % phases.length;
+        phaseStartRef.current = now;
+      }
+      animRef.current = requestAnimationFrame(tick);
+    }
+
+    draw(minR);
+    animRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(animRef.current);
+  }, [technique]);
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, flexShrink: 0 }}>
+      <canvas ref={canvasRef} width={90} height={90} />
+      <p style={{ fontSize: 12, color: '#666', textAlign: 'center', minWidth: 80, minHeight: 18 }}>{phaseLabel}</p>
+    </div>
+  );
+}
+
+function WellnessSection({ mood }: { mood: string }) {
+  const technique = WELLNESS[mood] ?? NEUTRAL_WELLNESS;
+
+  return (
+    <div>
+      <hr style={{ border: 'none', borderTop: '0.5px solid rgba(0,0,0,0.1)', margin: '1.25rem 0' }} />
+      <p style={{ fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: '0.75rem' }}>Wellness technique</p>
+      <div style={{ border: '0.5px solid rgba(0,0,0,0.08)', borderRadius: 16, padding: '1.25rem', background: 'rgba(0,0,0,0.01)' }}>
+        <p style={{ fontSize: 14, fontWeight: 500, color: '#111', marginBottom: '1rem' }}>{technique.name}</p>
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+          {technique.type === 'breath' ? (
+            <BreathingCanvas technique={technique} />
+          ) : (
+            <div style={{ flexShrink: 0 }} dangerouslySetInnerHTML={{ __html: technique.svg ?? '' }} />
+          )}
+          <div style={{ flex: 1 }}>
+            {technique.steps.map((step, i) => (
+              <div key={i} style={{ display: 'flex', gap: 10, marginBottom: 10, alignItems: 'flex-start' }}>
+                <div style={{ width: 20, height: 20, borderRadius: '50%', background: technique.bgColor, color: technique.numColor, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 500, flexShrink: 0, marginTop: 1 }}>
+                  {i + 1}
+                </div>
+                <p style={{ fontSize: 13, color: '#444', lineHeight: 1.5 }} dangerouslySetInnerHTML={{ __html: step.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <p style={{ fontSize: 11, color: '#bbb', fontStyle: 'italic', marginTop: '0.75rem', lineHeight: 1.6 }}>
+          Always consult your healthcare provider before starting any new wellness, breathing, or exercise program. This is not medical advice.
+        </p>
+      </div>
+    </div>
+  );
+}
 
 function getLengths(mood: string, count: number, step: number): number[] {
   const s = mood.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
@@ -145,7 +336,7 @@ export const App = () => {
 
   const pal = AURA[mood] ?? NEUTRAL_AURA;
   const vibe = VIBES[mood]?.[meetType];
-  const action = GOAL_ACTIONS[goal] ?? vibe?.action ?? '';
+  const goalAction = GOAL_ACTIONS[goal] ?? '';
 
   function goTo(s: Screen) { setScreen(s); window.scrollTo({ top: 0, behavior: 'smooth' }); }
   function restart() { setScreen('s1'); setMood(''); setMeetType(''); setIntent(''); setGoal(''); }
@@ -155,7 +346,7 @@ export const App = () => {
     setCopied(true); setTimeout(() => setCopied(false), 2000);
   }
 
-  const base: CSSProperties = { fontFamily: "-apple-system, 'Helvetica Neue', sans-serif", maxWidth: 440, margin: '0 auto', padding: '1.5rem 1.25rem 3rem', minHeight: '100vh', background: '#fff', color: '#111' };
+  const base: CSSProperties = { fontFamily: "-apple-system, 'Helvetica Neue', sans-serif", maxWidth: 440, margin: '0 auto', padding: '1.5rem 1.25rem 3rem', background: '#fff', color: '#111', overflow: 'hidden' };
 
   const brandRow = (label?: string) => (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.75rem' }}>
@@ -205,7 +396,7 @@ export const App = () => {
         <div style={{ display: 'flex', justifyContent: 'center', margin: '0.25rem 0 1.75rem' }}>
           <AuraWheel mood={mood} step={2} size={180} />
         </div>
-        {qHead('What are you walking into?', 'Each one hits different.')}
+        {qHead("What are you walking into?", 'Each one hits different.')}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: '1.5rem' }}>
           {[
             {v:'review',   l:"Someone's evaluating me",           s:'Performance review, feedback session, check-in'},
@@ -265,12 +456,17 @@ export const App = () => {
         </div>
         <div style={{ fontSize: 40, fontWeight: 500, letterSpacing: '-0.025em', lineHeight: 1.05, marginBottom: 4 }}>{vibe.word}</div>
         <p style={{ fontSize: 14, color: '#666', fontStyle: 'italic', marginBottom: '1.5rem', lineHeight: 1.6 }}>{vibe.tag}</p>
+
         <hr style={{ border: 'none', borderTop: '0.5px solid rgba(0,0,0,0.1)', margin: '1.25rem 0' }} />
         <p style={{ fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: '0.6rem' }}>Reframe</p>
-        <p style={{ fontSize: 15, lineHeight: 1.8, marginBottom: '1.25rem', color: '#111' }}>{vibe.reframe}</p>
+        <p style={{ fontSize: 15, lineHeight: 1.8, color: '#111' }}>{vibe.reframe}</p>
+
         <hr style={{ border: 'none', borderTop: '0.5px solid rgba(0,0,0,0.1)', margin: '1.25rem 0' }} />
         <p style={{ fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#aaa', marginBottom: '0.6rem' }}>Before you walk in</p>
-        <p style={{ fontSize: 14, color: '#555', lineHeight: 1.7 }}>{action}</p>
+        <p style={{ fontSize: 14, color: '#555', lineHeight: 1.7 }}>{goalAction}</p>
+
+        <WellnessSection mood={mood} />
+
         <div style={{ border: '0.5px solid rgba(0,0,0,0.1)', borderRadius: 12, padding: '1.25rem', marginTop: '1.5rem', background: 'rgba(0,0,0,0.02)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: '0.75rem' }}>
             <span style={{ width: 6, height: 6, borderRadius: '50%', background: pal.dot, display: 'inline-block' }} />
@@ -279,6 +475,7 @@ export const App = () => {
           <div style={{ fontSize: 22, fontWeight: 500 }}>{vibe.word}</div>
           <div style={{ fontSize: 13, color: '#777', fontStyle: 'italic', marginTop: 3 }}>{vibe.tag}</div>
         </div>
+
         <div style={{ display: 'flex', gap: 8, marginTop: '1.5rem' }}>
           <button onClick={doShare} style={{ background: '#111', color: '#fff', border: 'none', borderRadius: 8, padding: '11px 22px', fontSize: 14, fontFamily: 'inherit', cursor: 'pointer' }}>
             {copied ? 'Copied!' : 'Copy to share'}
