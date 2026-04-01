@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
+import { requestExpandedMode } from '@devvit/web/client';
 
 const COLORS = [
   '#AFA9EC','#5DCAA5','#F0997B','#85B7EB','#CECBF6',
@@ -17,7 +18,7 @@ function SplashWheel() {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d')!;
-    const W = 200, cx = 100, cy = 100;
+    const W = 150, cx = 75, cy = 75;
     const count = 14;
     const lengths = Array.from({ length: count }, (_, i) =>
       32 + 42 * Math.abs(Math.sin(i * 1.3 + 0.7))
@@ -58,51 +59,51 @@ function SplashWheel() {
     return () => cancelAnimationFrame(rafRef.current);
   }, []);
 
-  return <canvas ref={canvasRef} width={200} height={200} />;
+  return <canvas ref={canvasRef} width={150} height={150} />;
 }
 
 export function Splash() {
-  const handleStart = () => {
-    window.location.href = './game.html';
+  const handleStart = (e: React.MouseEvent) => {
+    requestExpandedMode(e.nativeEvent, 'game');
   };
 
   return (
     <div style={{
       fontFamily: "-apple-system, 'Helvetica Neue', sans-serif",
       background: '#0e0e0e',
-      
+      height: '100vh',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'space-between',
-      padding: '2rem 1.5rem 2.5rem',
-      maxWidth: 480,
-      margin: '0 auto',
+      justifyContent: 'center',
+      padding: '1rem',
+      textAlign: 'center',
+      overflow: 'hidden',
     }}>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 7, alignSelf: 'flex-start' }}>
-        <span style={{ width: 6, height: 6, borderRadius: '50%', background: 'rgba(255,255,255,0.3)', display: 'inline-block' }} />
-        <span style={{ fontSize: 12, fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.3)' }}>WalkIN</span>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: '1rem' }}>
+        <span style={{ width: 5, height: 5, borderRadius: '50%', background: 'rgba(255,255,255,0.3)', display: 'inline-block' }} />
+        <span style={{ fontSize: 11, fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.3)' }}>WalkIN</span>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem', flex: 1, justifyContent: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
         <SplashWheel />
-        <h1 style={{ fontSize: 22, fontWeight: 400, color: 'rgba(255,255,255,0.92)', textAlign: 'center', lineHeight: 1.4, maxWidth: 280, letterSpacing: '-0.01em', margin: 0 }}>
-          You know that feeling right before a{' '}
+        <h1 style={{ fontSize: 18, fontWeight: 400, color: 'rgba(255,255,255,0.92)', textAlign: 'center', lineHeight: 1.3, maxWidth: 240, letterSpacing: '-0.01em', margin: 0 }}>
+          That feeling before a{' '}
           <span style={{ color: '#fff', fontWeight: 500 }}>big meeting?</span>
         </h1>
-        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.35)', textAlign: 'center', lineHeight: 1.6, maxWidth: 260, margin: '-1rem 0 0' }}>
-          Let's figure out how to walk in as your best self.
+        <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.35)', textAlign: 'center', lineHeight: 1.5, maxWidth: 220, margin: 0 }}>
+          Let's walk in as your best self.
         </p>
       </div>
 
       <button
         onClick={handleStart}
         style={{
-          width: '100%', maxWidth: 320,
+          width: '100%', maxWidth: 280,
           background: '#fff', color: '#0e0e0e',
-          border: 'none', borderRadius: 100,
-          padding: '15px 32px', fontSize: 15,
+          border: 'none', borderRadius: 25,
+          padding: '12px 24px', fontSize: 14,
           fontWeight: 500, fontFamily: 'inherit',
           cursor: 'pointer', letterSpacing: '0.01em',
         }}
